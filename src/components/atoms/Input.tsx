@@ -8,21 +8,10 @@ interface InputProps {
   label: string;
 }
 
-const Input: React.FC<InputProps> = ({
-  name,
-  type,
-  placeholder,
-  value,
-  onChange,
-  error,
-  label,
-}) => {
+const Input: React.FC<InputProps> = ({ name, type, placeholder, value, onChange, error, label }) => {
   return (
     <div className="flex flex-col">
-      <label
-        htmlFor={name}
-        className="block text-sm font-medium text-gray-700 mb-2"
-      >
+      <label htmlFor={name} className="block text-sm font-medium text-gray-700 mb-2">
         {label}
       </label>
       <input

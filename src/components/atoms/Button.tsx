@@ -20,8 +20,8 @@ const Button: React.FC<ButtonProps> = ({
       type={type}
       onClick={onClick}
       className={`
-        cursor-pointer group relative inline-flex items-center justify-center overflow-hidden
-        rounded-lg bg-blue-500 px-6 py-2 text-sm font-semibold text-white 
+        mt-6 cursor-pointer group relative inline-flex items-center justify-center overflow-hidden
+        rounded-lg bg-blue-500 px-6 py-2 text-white 
         transition-all duration-300 ease-in-out
         hover:bg-blue-600
         ${fullWidth ? 'w-full' : 'w-auto'}
