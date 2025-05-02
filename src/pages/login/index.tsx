@@ -23,17 +23,19 @@ const LoginPage = () => {
     },
   ];
   return (
-    <div className="p-12 bg-white mt-10 max-w-2xl mx-auto shadow-lg rounded-lg">
-      <h1 className="text-3xl mb-6">Iniciar sesion</h1>
-      <Form<FormValues>
-        fields={fields}
-        values={values}
-        errors={errors}
-        onChange={handleChange}
-        onSubmit={handleSubmit}
-        submitLabel="Ingresar"
-      />
-    </div>
+    <>
+      <div className="p-12 bg-white mt-10 max-w-2xl mx-auto shadow-lg rounded-lg">
+        <h1 className="text-3xl mb-6">Iniciar sesion</h1>
+        <Form<FormValues>
+          fields={fields}
+          values={values}
+          errors={errors}
+          onChange={handleChange}
+          onSubmit={handleSubmit}
+          submitLabel="Ingresar"
+        />
+      </div>
+    </>
   );
 };
 

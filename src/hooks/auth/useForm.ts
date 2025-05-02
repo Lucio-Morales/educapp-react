@@ -41,8 +41,9 @@ export const useForm = (initialValues: FormValues) => {
 
       setErrors(newErrors);
 
+      // Ejecucion de login para validar credenciales y redireccion.
       if (Object.keys(newErrors).length === 0) {
-        console.log('Formulario enviado correctamente:', values);
+        console.log('Login values,', values);
       }
     },
     [values, validateField]
